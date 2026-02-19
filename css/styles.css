@@ -185,7 +185,10 @@ body {
     font-weight: bold;
     color: #5e5d59;
 }
-.value { flex: 1; }
+.value { 
+	flex: 1; 
+	white-space: pre-wrap;
+}
 
 /* VISITS TABS */
 .visits-section { 
