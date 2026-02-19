@@ -21,7 +21,7 @@ body {
 
 .app {
     display: flex;
-    max-width: 1400px;
+    max-width: 1100px;
     margin: 0 auto;
     border-radius: 5px;
 }
@@ -29,8 +29,8 @@ body {
 .sidebar {
     background: var(--parchment-bg);
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
-    width: 240px;
-    padding: 30px;
+    width: fit-content;
+    padding: 30px 0;
     border-radius: 5px 0 0 5px;
     color: var(--ink-color);
     margin-top: 20px;
@@ -40,13 +40,21 @@ body {
 .sidebar ul { 
 	list-style: none; padding-left: 0; 
 }
-.sidebar li { 
-	margin-bottom: 12px; 
+.sidebar li {
+    border-bottom: 1px solid var(--shadow-color);
+    padding: 12px 30px;
+}
+.sidebar li:has(.patient-link.active) {
+    background-color: #ffffff4d;
 }
 .sidebar h2 {
-	margin: 0;
+    margin: 0;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: .2rem;
 }
-
 .patient-link {
   cursor: pointer;
   color: var(--ink-color);
@@ -157,9 +165,6 @@ body {
 		margin-top:0;
 	}
 	.parchment {
-		background: url(https://github.com/azoschke/rp-form-to-pdf/blob/form-to-pdf-website/pdf-texture-web.jpg?raw=true);
-		background-size: 100%;
-		background-repeat: repeat;
 		padding: 40px 30px;
 	}
 }
