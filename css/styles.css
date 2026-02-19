@@ -98,6 +98,9 @@ body {
     color: var(--ink-color);
     margin-top: 20px;
     margin-bottom: 20px;
+	height: fit-content;
+	position: sticky;
+    top: 20px;
 }
 
 .sidebar ul { 
@@ -145,7 +148,7 @@ body {
 }
 
 .patient-header { 
-	margin-bottom: 35px; 
+	margin-bottom: 20px; 
 }
 .patient-header h1.patient-name {
     font-family: 'La Belle Aurore', cursive;
@@ -228,6 +231,7 @@ body {
 		width:-webkit-fill-available;
 		border-radius:5px;
 		margin-top:0;
+		position: unset;
 	}
 	.parchment {
 		padding: 40px 30px;
