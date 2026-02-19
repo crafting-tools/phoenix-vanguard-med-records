@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Ledger', serif;
+	font-weight: 600;
     background-image: url(https://github.com/crafting-tools/phoenix-vanguard-med-forms/blob/main/form-bg-web.jpg?raw=true);
     background-attachment: fixed;
     background-size: cover;
@@ -26,9 +27,8 @@ body {
 }
 /* SIDEBAR */
 .sidebar {
-    background: url(https://github.com/azoschke/rp-form-to-pdf/blob/form-to-pdf-website/pdf-texture-web.jpg?raw=true);
-    background-size: cover;
-    background-repeat: repeat;
+    background: var(--parchment-bg);
+    background-image: url(data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E);
     width: 240px;
     padding: 30px;
     border-radius: 5px 0 0 5px;
@@ -55,7 +55,6 @@ body {
   transition: 0.2s;
 }
 .patient-link.active {
-    font-weight: bold;
     color: var(--accent-red);
 }
 .patient-link:hover { 
@@ -66,8 +65,8 @@ body {
 .content { flex: 1; }
 
 .parchment {
-    background: url(https://github.com/azoschke/rp-form-to-pdf/blob/form-to-pdf-website/pdf-texture-web.jpg?raw=true);
-    background-size: cover;
+    background: var(--parchment-bg);
+    background-image: url(data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E);
     padding: 60px;
     border-radius: 5px;
     box-shadow: 0 0 20px var(--shadow-color), inset 0 0 50px rgba(139, 105, 20, 0.1);
@@ -103,12 +102,13 @@ body {
 	margin-bottom: 20px; 
 }
 .label {
-    font-size: .9rem;
+    font-family: 'Stoke';
+    font-size: .8rem;
     margin-bottom: 6px;
-    letter-spacing: .155rem;
+    letter-spacing: .125rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: #3d302a;
+    color: #5e5d59;
 }
 .value { flex: 1; }
 
