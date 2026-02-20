@@ -72,7 +72,7 @@ body {
     text-decoration: none;
     font-family: 'Stoke';
     font-weight: 500;
-    padding: 10px;
+    padding: 10px 15px;
     display: block;
     width: fit-content;
     font-size: .76rem;
@@ -80,6 +80,12 @@ body {
     letter-spacing: .15rem;
     background: #19100c;
     border-radius: 6px;
+}
+.header .nav a.active {
+    border: 1px solid #e1dbd1;
+    color: #e1dbd1;
+    background-color: #19100c7a;
+    font-weight: 800;
 }
 
 .app {
