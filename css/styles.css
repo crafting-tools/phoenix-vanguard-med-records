@@ -124,7 +124,7 @@ p {
 }
 .sidebar li {
     border-bottom: 1px solid var(--shadow-color);
-    padding: 12px 30px;
+    padding: 8px 30px;
 }
 .sidebar li:has(.patient-link.active) {
     background-color: #ffffff4d;
@@ -136,6 +136,7 @@ p {
     text-transform: uppercase;
     font-size: 1.25rem;
     letter-spacing: .2rem;
+	margin-bottom: 1rem;
 }
 .patient-link {
   cursor: pointer;
@@ -245,7 +246,15 @@ p {
 
 /* RESPONSIVE FIELDS */
 @media (max-width: 900px) {
-    .app, .header .branding {flex-direction: column;}
+    .app, .header .branding {
+		flex-direction: column;
+	}
+	.nav {
+		justify-content: center;
+	}
+	.header {
+		text-align:center;
+	}
     .sidebar {
 		width:-webkit-fill-available;
 		border-radius:5px;
