@@ -8,6 +8,12 @@
   --shadow-color: rgba(44,24,16,0.3);
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Ledger', serif;
 	font-weight: 600;
