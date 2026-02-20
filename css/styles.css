@@ -25,6 +25,10 @@ body {
     color: var(--ink-color);
 }
 
+p {
+    margin-bottom: .75rem;
+}
+
 .header {
     max-width: 1100px;
     margin: 0 auto;
