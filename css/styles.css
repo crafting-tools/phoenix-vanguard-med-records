@@ -141,6 +141,7 @@ p, ol, ul {
     background-color: #ffffff4d;
 }
 .sidebar h2 {
+	font-family: 'Stoke';
     margin: 0;
     padding: 0 30px;
     text-align: center;
@@ -224,6 +225,11 @@ p, ol, ul {
     font-weight: bold;
     color: #5e5d59;
 }
+.visit-details-container .label {
+	padding-bottom: 4px;
+    border-bottom: 2px dashed var(--parchment-dark);
+}
+
 .section .value h2 {
     font-family: 'Stoke';
     font-size: .85rem;
@@ -231,8 +237,7 @@ p, ol, ul {
     margin-top: 1rem;
     margin-bottom: .6rem;
     padding-bottom: .2rem;
-    color: #24231f;
-    border-bottom: 2px dashed var(--parchment-dark);
+    color: #5e5d59;
 }
 
 .field .value p:last-child, .field .value ul:last-child, .field .value ol:last-child {
