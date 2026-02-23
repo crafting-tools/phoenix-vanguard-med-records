@@ -8,6 +8,8 @@ const patientContent = document.getElementById("patientContent");
 let patientsData = [];
 let visitsData = [];
 
+marked.use({ breaks: true });
+
 // Load patients
 Papa.parse(patientsURL, {
   download: true,
