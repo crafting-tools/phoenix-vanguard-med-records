@@ -25,6 +25,7 @@ body {
 }
 
 h1 {
+	font-family: 'Stoke';
     font-size: 1.8rem;
     line-height: 1.9rem;
     margin-bottom: 1.5rem;
@@ -33,8 +34,8 @@ h1 {
 }
 p, ol, ul {
     font-family: "Crimson Pro", serif;
-    font-size: 1.25rem;
-    line-height: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.35rem;
     font-weight: 450;
     margin-bottom: .75rem;
 }
@@ -267,7 +268,8 @@ p, ol, ul {
   border-radius: 6px 6px 0 0;
   cursor: pointer;
   font-family: "Crimson Pro", serif;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
+  font-weight: 550;
   max-width: 160px;
   white-space: nowrap;
   overflow: hidden;
@@ -276,7 +278,7 @@ p, ol, ul {
 .visit-tab.active {
     background: #f9f5efa3;
     color: var(--ink-color);
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .visit-details-container {
