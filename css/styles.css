@@ -211,6 +211,27 @@ p {
     font-weight: bold;
     color: #5e5d59;
 }
+
+.label {
+    font-family: 'Stoke';
+    font-size: .8rem;
+    margin-bottom: 6px;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #5e5d59;
+}
+.section .value h2 {
+    font-family: 'Stoke';
+    font-size: .85rem;
+    letter-spacing: .05rem;
+    margin-top: 1rem;
+    margin-bottom: .6rem;
+    padding-bottom: .2rem;
+    color: #24231f;
+    border-bottom: 2px dashed var(--parchment-dark);
+}
+
 .value p { 
 	margin-bottom: .75rem;
 }
