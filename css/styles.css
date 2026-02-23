@@ -211,9 +211,16 @@ p {
     font-weight: bold;
     color: #5e5d59;
 }
-.value { 
-	flex: 1; 
-	white-space: pre-wrap;
+.value p { 
+	margin-bottom: .75rem;
+}
+.field .value p:last-child {
+    margin-bottom: 0;
+}
+
+.value ul, .value ol { 
+	margin-left: 1.25rem; 
+	margin-bottom: 0.75rem; 
 }
 
 /* VISITS TABS */
@@ -252,6 +259,10 @@ p {
   background: #f9f5efa3;
 }
 .visit-details .field { margin-bottom: 10px; }
+
+.visit-details-container .field:last-child {
+    margin-bottom: 0;
+}
 
 /* RESPONSIVE FIELDS */
 @media (max-width: 900px) {
